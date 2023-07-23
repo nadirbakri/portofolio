@@ -24,34 +24,6 @@ export default function Home() {
 
   const portofolioSection = useRef(null);
 
-  const workExperience = [
-    {
-      date: "2022 - Present",
-      title: "Software Engineer at PT.Intikom Berlian Mustika",
-      description: "In charge of developing new features for the Stream Mobile API, maintaining the API to ensure bug-free performance, and also involved in developing new features for the HRMS.",
-    },
-    {
-      date: "2022 - 2022",
-      title: "Fullstack Developer at Majoo",
-      description: "In charge of developing new features for the CRM and maintaining the application to ensure it remains bug-free.",
-    },
-    {
-      date: "2021 - 2021",
-      title: "Fullstack Developer Intern at Rumah Penalaran",
-      description: "In charge of developing end-to-end event registration applications, conducting thorough application testing, and performing User Acceptance Testing (UAT).",
-    },
-    {
-      date: "2021 - 2022",
-      title: "Fullstack Developer Freelance at Our Love Day",
-      description: "In charge of developing online invitation application, conducting application testing, and performing User Acceptance Testing (UAT).",
-    },
-    {
-      date: "2018 - 2022",
-      title: "Student at Brawijaya University",
-      description: "Graduated with honors, achieving a GPA of 3.75",
-    },
-  ];
-
   return (
     <>
       <Head>
@@ -63,7 +35,7 @@ export default function Home() {
       <main>
         <Navbar />
         <Hero headingText={headingText} />
-        <WorkExperience workExperience={workExperience} />
+        <WorkExperience />
         <section ref={portofolioSection} className='min-vh-100 bg-dark text-white position-relative' id='portofolioSection'>
           <h1 className={`${styles.playfair} text-center`}>Portofolio</h1>
           <div className='position-absolute top-50 start-50 translate-middle'>
