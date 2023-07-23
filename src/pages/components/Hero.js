@@ -9,11 +9,9 @@ const Hero = ({ headingText }) => {
   const scrollToPortofolio = () => {
     const portofolioSection = document.getElementById("portofolioSection");
     if (portofolioSection) {
-      console.log('ad');
       portofolioSection.scrollIntoView({ behavior: "smooth" });
     }
 
-    console.log(portofolioSection);
   };
 
   return (
