@@ -24,7 +24,7 @@ const Contact = () => {
         <div className='row pt-5'>
           <div className='col-4 offset-2'>
             <div className={`${styles.contactButton} bg-white text-dark text-center`} onClick={handleWhatsApp}>
-              <span><BiLogoWhatsapp className={`${styles.contactIcon}`} /> Whatsapp</span>
+              <span className={`${styles.playfair}`}><BiLogoWhatsapp className={`${styles.contactIcon}`} /> Whatsapp</span>
             </div>
           </div>
           <div className='col-4'>
