@@ -24,14 +24,12 @@ const Contact = () => {
         <div className='row pt-5'>
           <div className='col-4 offset-2'>
             <div className={`${styles.contactButton} bg-white text-dark`} onClick={handleWhatsApp}>
-              <BiLogoWhatsapp className={`${styles.contactIcon}`} />
-              <span className={`${styles.contactLabel}`}>WhatsApp</span>
+              <BiLogoWhatsapp className={`${styles.contactIcon} text-center`} />
             </div>
           </div>
           <div className='col-4'>
             <div className={`${styles.contactButton} bg-white text-dark`} onClick={handleEmail}>
-              <FaEnvelope className={`${styles.contactIcon}`} />
-              <span className={`${styles.contactLabel}`}>Email</span>
+              <FaEnvelope className={`${styles.contactIcon} text-center`} />
             </div>
           </div>
         </div>

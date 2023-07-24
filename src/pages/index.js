@@ -39,7 +39,7 @@ export default function Home() {
         <section ref={portofolioSection} className='min-vh-100 bg-dark text-white position-relative' id='portofolioSection'>
           <h1 className={`${styles.playfair} text-center`}>Portofolio</h1>
           <div className='position-absolute top-50 start-50 translate-middle'>
-            <h1 className={`${styles.monserrat}`}>Coming Soon!</h1>
+            <h5 className={`${styles.monserrat} text-center`}>Coming Soon!</h5>
           </div>
         </section>
         <Contact />
