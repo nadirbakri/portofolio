@@ -1,29 +1,40 @@
 import styles from '@/styles/Home.module.css';
+import { FaEnvelope } from "react-icons/fa";
+import { BiLogoWhatsapp } from "react-icons/bi";
 
 const Contact = () => {
+  const handleWhatsApp = () => {
+    const phoneNumber = '6285692468229';
+    const message = "Hello, I'm interested in getting in touch with you.";
+    window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`);
+  };
+
+  const handleEmail = () => {
+    // Gantikan alamat email Anda dan subjek email yang diinginkan
+    const email = 'your-email@example.com';
+    const subject = "Get in Touch - Let's Create Something Amazing Together!";
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+  };
+
   return (
-    <section className='min-vh-100 bg-dark text-white'>
+    <section className='bg-dark text-white pb-5'>
       <div className='container'>
         <h1 className={`${styles.playfair} text-center`}>Contact Me</h1>
-        <form>
-          <div className="mb-3">
-            <label htmlFor="inputName" className="form-label">Enter your Name</label>
-            <input type="text" className="form-control" id="inputName" />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="inputEmail" className="form-label">Enter your Name Email</label>
-            <input type="email" className="form-control" id="inputEmail" />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="textarea" className="form-label">Enter your Message</label>
-            <div className="form-floating">
-              <textarea className="form-control" id="textarea" style={{ height: "200px" }}></textarea>
+        <p className={`${styles.montserrat} text-center`}>Thank you for visiting my portfolio! I'm thrilled that you stopped by and I'd love to hear from you. Whether you have questions about my work, want to discuss potential collaborations, or simply want to say hello, feel free to get in touch with me. I'm always eager to connect with like-minded individuals, fellow creatives, and potential clients.</p>
+        <div className='row pt-5'>
+          <div className='col-4 offset-2'>
+            <div className={`${styles.contactButton} bg-white text-dark`} onClick={handleWhatsApp}>
+              <BiLogoWhatsapp className={`${styles.contactIcon}`} />
+              <span className={`${styles.contactLabel}`}>WhatsApp</span>
             </div>
           </div>
-          <div className='d-grid gap-2'>
-            <button type="submit" className="mt-3 btn btn-light btn-block">Submit</button>
+          <div className='col-4'>
+            <div className={`${styles.contactButton} bg-white text-dark`} onClick={handleEmail}>
+              <FaEnvelope className={`${styles.contactIcon}`} />
+              <span className={`${styles.contactLabel}`}>Email</span>
+            </div>
           </div>
-        </form>
+        </div>
       </div>
     </section>
   );
