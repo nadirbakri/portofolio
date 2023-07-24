@@ -20,6 +20,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.heightContainer100 {
+  min-height: 100vh;
+}
+
 .selfie {
   background-image: url("/images/img.jpeg");
   background-size: cover;
@@ -90,5 +94,9 @@
   .selfie {
     height: 500px;
     width: 500px;
+  }
+
+  .heightContainer100 {
+    min-height: 80vh;
   }
 }

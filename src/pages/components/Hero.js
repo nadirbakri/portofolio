@@ -15,7 +15,7 @@ const Hero = ({ headingText }) => {
   };
 
   return (
-    <section className='min-vh-100 bg-dark text-white d-flex align-items-center'>
+    <section className={`bg-dark text-white d-flex align-items-center ${styles.heightContainer100}`}>
       <div className='container h-100'>
         <div className={`${styles.centerRow} row h-100`}>
           <div className='col-12 col-md-6 d-flex justify-content-center align-items-center'>
