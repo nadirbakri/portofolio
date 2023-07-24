@@ -23,13 +23,13 @@ const Contact = () => {
         <p className={`${styles.montserrat} text-center`}>Thank you for visiting my portfolio! I'm thrilled that you stopped by and I'd love to hear from you. Whether you have questions about my work, want to discuss potential collaborations, or simply want to say hello, feel free to get in touch with me. I'm always eager to connect with like-minded individuals, fellow creatives, and potential clients.</p>
         <div className='row pt-5'>
           <div className='col-4 offset-2'>
-            <div className={`${styles.contactButton} bg-white text-dark`} onClick={handleWhatsApp}>
-              <BiLogoWhatsapp className={`${styles.contactIcon} text-center`} />
+            <div className={`${styles.contactButton} bg-white text-dark text-center`} onClick={handleWhatsApp}>
+              <span><BiLogoWhatsapp className={`${styles.contactIcon}`} /> Whatsapp</span>
             </div>
           </div>
           <div className='col-4'>
-            <div className={`${styles.contactButton} bg-white text-dark`} onClick={handleEmail}>
-              <FaEnvelope className={`${styles.contactIcon} text-center`} />
+            <div className={`${styles.contactButton} bg-white text-dark text-center`} onClick={handleEmail}>
+              <span className={`${styles.playfair}`}><FaEnvelope className={`${styles.contactIcon}`} /> Whatsapp</span>
             </div>
           </div>
         </div>
