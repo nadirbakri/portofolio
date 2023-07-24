@@ -29,7 +29,7 @@ const Contact = () => {
           </div>
           <div className='col-4'>
             <div className={`${styles.contactButton} bg-white text-dark text-center`} onClick={handleEmail}>
-              <span className={`${styles.playfair}`}><FaEnvelope className={`${styles.contactIcon}`} /> Whatsapp</span>
+              <span className={`${styles.playfair}`}><FaEnvelope className={`${styles.contactIcon}`} /> Email</span>
             </div>
           </div>
         </div>
